@@ -5,11 +5,12 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(-45deg, #818181, #F6F6F6  );
+    background: linear-gradient(-45deg, #818181, #F6F6F6);
     justify-content: center;
     align-items: center;
     margin: 0px;
-    width: 100vw;
+    width: auto;
+    height: 100%;
 }
 
 img {
@@ -30,13 +31,13 @@ footer {
 
 h1 {
     display: flex;
-    position: fixed;
     top:0;
+    width: 100%;
     align-items: center;
     background-color: #F6F6F6;
     justify-content: center;
     border: 0px;
-    padding: 20px 250px;
+    padding: 20px 0px;
     margin: 0;
     font-style: italic;
 
@@ -47,6 +48,11 @@ ol {
     max-width: 650px;
     margin-top: 100px;
     margin-bottom: 100px;
+}
+
+li {
+    border-color: #818181;
+    border-top: 20px;
 }
 
 ul {
@@ -63,3 +69,36 @@ p {
 .ingredients, .steps {
     font-weight: bold;
 }
+
+.navi li {
+    list-style: none;
+    align-items: center;
+}
+
+
+.btn {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    width: 200px;
+    background-color: brown;
+    color: black;
+    border-radius: 100%;
+    justify-content: center;
+    text-decoration: none;
+}
+
+a {
+    display: flex;
+    align-items: center;
+}
+
+.btn:hover {
+    color: white;
+}
+
+.btn:active {
+    color: brown;
+    background-color: white;
+}
+
